@@ -10,13 +10,11 @@
     "max": 50
   },
   "postgresql": {
-    "client": "pg",
-    "connection": "postgres://chris_chat_client@localhost:5432/chris_chatapp"
+    "client": "pg"
   },
   "authentication": {
     "entity": "user",
     "service": "users",
-    "secret": "RKheNMnSfw/9GC3XD6R6XEUQwZKBKIUG",
     "authStrategies": [
       "jwt",
       "local"
