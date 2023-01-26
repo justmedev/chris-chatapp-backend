@@ -20,7 +20,7 @@ export const channels = (app: Application) => {
     app.channel('anonymous').join(connection)
   })
 
-  app.on('login', (authResult: AuthenticationResult, { connection }: Params) => {
+  app.on('signup', (authResult: AuthenticationResult, { connection }: Params) => {
     // connection can be undefined if there is no
     // real-time connection, e.g. when logging in via REST
     if (connection) {
